@@ -1,0 +1,81 @@
+{
+	"name": "node-ts-boilerplate",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"keywords": [
+		"typescript",
+		"nodejs",
+		"api rest",
+		"express",
+		"mongo"
+	],
+	"author": {
+		"name": "Daniel Sousa",
+		"email": "geral@daniel-sousa.com",
+		"url": "https://github.com/TutoDS"
+	},
+	"scripts": {
+		"start": "node dist/server.js",
+		"dev": "nodemon -r tsconfig-paths/register --config nodemon.json src/server.ts",
+		"build": "rm -rf ./dist && babel ./src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
+		"lint": "echo \"———› START ESLint ‹———\" && eslint . --ext .ts && echo \"———› ESLint ✅ ‹———\"",
+		"format": "echo \"———› START Prettier ‹———\" && prettier --write . && echo \"———› Prettier ✅ ‹——— \""
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cookie-parser": "^1.4.5",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"ejs": "^3.1.5",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.11.13",
+		"nodemailer": "^6.4.17"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.10",
+		"@babel/core": "^7.12.10",
+		"@babel/node": "^7.12.10",
+		"@babel/plugin-proposal-class-properties": "^7.12.13",
+		"@babel/plugin-proposal-object-rest-spread": "^7.12.13",
+		"@babel/preset-env": "^7.12.11",
+		"@babel/preset-typescript": "^7.12.16",
+		"@types/bcryptjs": "^2.4.2",
+		"@types/body-parser": "^1.19.0",
+		"@types/cookie-parser": "^1.4.2",
+		"@types/cors": "^2.8.9",
+		"@types/ejs": "^3.0.5",
+		"@types/express": "^4.17.11",
+		"@types/jsonwebtoken": "^8.5.0",
+		"@types/mongoose": "^5.10.3",
+		"@types/node": "^14.14.22",
+		"@types/nodemailer": "^6.4.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.0",
+		"@typescript-eslint/parser": "^4.14.0",
+		"babel-plugin-module-resolver": "^4.1.0",
+		"eslint": "^7.18.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"husky": "^4.3.8",
+		"lint-staged": "^10.5.3",
+		"nodemon": "^2.0.7",
+		"prettier": "^2.2.1",
+		"prettier-plugin-organize-imports": "^1.1.1",
+		"ts-node": "^9.1.1",
+		"tsconfig-paths": "^3.9.0",
+		"typescript": "^4.1.3"
+	},
+	"lint-staged": {
+		"*.{js,ts,json,scss,css,md,html,tsx,jsx}": [
+			"prettier --write ."
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "echo \"———› START Prettier ‹———\" && lint-staged && git add . && echo \"———› Prettier ✅ ‹——— \"",
+			"pre-push": "echo \"———› START ESLint ‹———\" && eslint . --ext .ts && echo \"———› ESLint ✅ ‹———\""
+		}
+	}
+}
