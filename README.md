@@ -40,3 +40,27 @@ In this repository you can find folders shown below:
 The folder **`src/configs`** contains all code related with configs, like **Mongoose** connection.bg-0
 
 Beyond that folders, you can find **Babel** <small>(`babel.config.json`)</small> and **TypeScript** <small>(`tsconfig.json`)</small> configuration file, as also **ESLint** <small>(`.eslintrc` and `.eslintignore`)</small>, **Nodemoon** <small>(`nodemoon.json`)</small> and **Prettier** <small>(`.prettierrc`)</small> configuration files.
+
+
+
+<h2 style="font-weight: 300">
+	Notes
+</h2>
+
+> **About TypeScript:** in `tsconfig.json` you can see the configuration I use. I create custom paths to use in all `.ts` files, this way you not need use relative paths, for example, to `configs/` folder, I create `@configs` path, and to use: `import mongoose from '@configs/mongoose'`.
+> For me, this is a good functionality in TypeScript and help you to create a clean imports.
+
+<h3 style="font-weight: 300">Custom Paths - TypeScript</h3>
+
+```json
+"paths": {
+	"@models/*": ["./models/*"],
+	"@controllers/*": ["./controllers/*"],
+	"@views/*": ["./views/*"],
+	"@configs/*": ["./configs/*"],
+	"@middlewares/*": ["./middlewares/*"],
+	"@exceptions/*": ["./exceptions/*"],
+	"@routes/*": ["./routes/*"],
+	"@index-routes": ["./routes"]
+},
+```
