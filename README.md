@@ -1,4 +1,4 @@
-<p style="text-align: center;margin-bottom: 30px">
+<p align="center">
 	<a href="#">
 		<img src="https://i.ibb.co/FVw9wS8/dsousa-logo.png" alt="Daniel Sousa @TutoDS" width="200px">
 	</a>
