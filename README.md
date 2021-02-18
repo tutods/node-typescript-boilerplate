@@ -39,4 +39,4 @@ In this repository you can find folders shown below:
 
 The folder **`src/configs`** contains all code related with configs, like **Mongoose** connection.bg-0
 
-Beyond that folders, you can find **Babel**<small>(`babel.config.json`)</small> and **TypeScript**<small>(`tsconfig.json`)</small> configuration file, as also **ESLint**<small>(`.eslintrc` and `.eslintignore`)</small>, **Nodemoon**<small>(`nodemoon.json`)</small> and **Prettier**<small>(`.prettierrc`)</small>)configuration files.
+Beyond that folders, you can find **Babel**<small>(`babel.config.json`)</small> and **TypeScript**<small>(`tsconfig.json`)</small> configuration file, as also **ESLint**<small>(`.eslintrc` and `.eslintignore`)</small>, **Nodemoon**<small>(`nodemoon.json`)</small> and **Prettier**<small>(`.prettierrc`)</small> configuration files.
