@@ -11,6 +11,10 @@
 	Boilerplate
 </h2>
 
+<div style="margin-bottom: 40px">
+	<div style="display: inline-block; width: 100px; height: 100px; background-image: url(https://codeknight.co.uk/uploads/blog/_800x418_crop_center-center_82_none/5538/prettier.jpg?mtime=1594208937); background-size: cover; background-position: center;"></div> <div style="display: inline-block; width: 100px; height: 100px; background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png); background-size: cover; background-position: center;"></div>
+</div>
+
 
 This repository contains my boilerplate to build an API Rest using **NodeJS**, **TypeScript**, **ExpressJS** and **Mongoose** (**MongoDB**).
 
