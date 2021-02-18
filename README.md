@@ -1,19 +1,7 @@
-<p style="text-align: center">
+<p style="text-align: center;margin-bottom: 30px">
 	<a href="#">
 		<img src="https://i.ibb.co/FVw9wS8/dsousa-logo.png" alt="Daniel Sousa @TutoDS" width="200px">
 	</a>
-</p>
-
-<h1 style="text-align: center; padding: 0;">
-	NodeJS + TypeScript + Express + Mongoose
-
-</h1>
-<h2 style="text-align: center; font-weight: 300">
-	Boilerplate
-</h2>
-
-<p align="center">
-	<a href="#"><img src="https://img.shields.io/badge/Status-In%20Progress-yellow" alt="status"></a>
 </p>
 
 <p align="center">
@@ -21,6 +9,13 @@
   <a href="#"><img src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge" alt="ExpressJS"/></a>
   <a href="#"><img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
   <a href="#"><img src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/></a>
+</p>
+<h2 style="text-align: center; font-weight: 300;margin-top:0">
+	Boilerplate
+</h2>
+
+<p align="center">
+	<a href="#"><img src="https://img.shields.io/badge/Status-In%20Progress-yellow" alt="status"></a>
 </p>
 
 > **Note:** Login is implemented, but the middleware to verify if user have session and router protection not finished yet
