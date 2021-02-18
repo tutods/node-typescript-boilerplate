@@ -15,7 +15,7 @@ const MONGO_OPTIONS = {
 
 const MONGO = {
 	host: process.env.MONGO_HOST || 'localhost',
-	database: process.env.MONGO_DB || 'gym_db',
+	database: process.env.MONGO_DB || 'boilerplate',
 	port: process.env.MONGO_PORT || '27017',
 	options: MONGO_OPTIONS,
 	url: `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}`,
