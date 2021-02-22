@@ -26,7 +26,7 @@ const getById = (req: Request, res: Response, next: NextFunction): void => {
 
 	User.findById(id)
 		.exec()
-		.then((user: IUser, err: Error) => {
+		.then((user: IUser | null, err?: Error) => {
 			if (err) {
 				throw new HttpException(400, err.message);
 			} else if (user === null) {

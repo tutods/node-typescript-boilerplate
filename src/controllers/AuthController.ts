@@ -10,7 +10,7 @@ const login = (req: Request, res: Response, next: NextFunction): void => {
 
 	User.findOne({ email: email })
 		.exec()
-		.then(async (user: IUser, err: Error) => {
+		.then(async (user: IUser | null, err?: Error) => {
 			if (err) {
 				throw new HttpException(401, err.message);
 			} else if (user === null) {

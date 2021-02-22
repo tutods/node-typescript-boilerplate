@@ -2,7 +2,7 @@ import { env } from '@configs/environment';
 import logging from '@configs/logging';
 import { IUser } from '@models/interfaces/IUser';
 import bcrypt from 'bcryptjs';
-import mongoose, { Schema } from 'mongoose';
+import mongoose, { Schema, ValidatorProps } from 'mongoose';
 
 const salt = bcrypt.genSaltSync(env.jwt.salt);
 
@@ -21,7 +21,8 @@ const UserSchema: Schema = new Schema(
 				validator: function (data: string) {
 					return /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(data);
 				},
-				message: (props) => `${props.value} is not a valid email!`,
+				message: (props: ValidatorProps) =>
+					`${props.value} is not a valid email!`,
 			},
 			required: [true, 'User email is required'],
 			unique: [true, 'This email already exists'],
@@ -32,7 +33,7 @@ const UserSchema: Schema = new Schema(
 				validator: function (data: string) {
 					return /^\d{9}$/.test(data);
 				},
-				message: (props) =>
+				message: (props: ValidatorProps) =>
 					`${props.value} is not a valid phone number`,
 			},
 		},
